@@ -1,7 +1,7 @@
 ﻿namespace Oxide.Plugins
 {
     [Info("Upkeep Display Fix", "WhiteThunder", "1.0.0")]
-    [Description("Fixes upkeep displayed in the Tool Cupboard UI to properly take into account decay scale.")]
+    [Description("Fixes display bug where Tool Cupboard upkeep doesn't factor in decay scale.")]
     internal class UpkeepDisplayFix : CovalencePlugin
     {
         private void OnEntitySaved(BuildingPrivlidge buildingPrivilege, BaseNetworkable.SaveInfo saveInfo)
